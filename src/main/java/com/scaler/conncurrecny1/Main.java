@@ -18,7 +18,7 @@ public class Main {
 
     HelloWorldPrinter helloWorldPrinter = new HelloWorldPrinter();
     Thread thread1 = new Thread(helloWorldPrinter); // Step 2/3:created threaded and asssigned the task
-    thread1.start(); // step 4: start the
+    thread1.start(); // step 4: start the thread
 
         System.out.println("Hello class is running on thread : " + Thread.currentThread().getName());
 //  Imp : here we have 3 theads executing main, thread-0, main
