@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         ExecutorService executorService = Executors.newFixedThreadPool(10);
-//  Here we have now created only 10 threads instanceof keep creating unlimited thread as done in concurrency 2 Number printer class
+//  Here we have now created only 10 threads instead of keep creating unlimited thread as done in concurrency 2 Number printer class
 
         for (int i=1; i<=100; i++){// for 100 tasks we will ask executor service to assign it among 10 threads
 //            if(i==5 || i==10 || i==50 || i==99){
