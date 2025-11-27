@@ -16,7 +16,9 @@ public class Main {
         List<Integer> listToSort= Arrays.asList(4, 1, 7, 2, 3, 6, 8, 5, 4);
 
     ExecutorService executorService=Executors.newCachedThreadPool();
-    MergeSorter mergeSorter=new MergeSorter(listToSort, executorService);//executor service added after constructor injection.
+    MergeSorter mergeSorter=new MergeSorter(listToSort
+//            , executorService
+    );//executor service added after constructor injection.
     Future<List<Integer>> futureSortedList=executorService.submit(mergeSorter);
 
         System.out.println(futureSortedList.get());
